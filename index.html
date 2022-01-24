@@ -8,11 +8,88 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
     <title>Trevland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="header--overlay">
+      <header class="header">
+        <div class="container">
+          <div class="wrapper">
+            <a href="/" class="logo">Trevland</a>
+
+            <nav class="nav-mobile">
+              <ul class="nav-mobile__list">
+                <li class="nav-mobile__item">
+                  <a href="#" class="nav-mobile__link">Home</a>
+                </li>
+                <li class="nav-mobile__item">
+                  <a href="#" class="nav-mobile__link">Location</a>
+                </li>
+                <li class="nav-mobile__item">
+                  <a href="#" class="nav-mobile__link">Blog</a>
+                </li>
+                <li class="nav-mobile__item">
+                  <a href="#" class="nav-mobile__link">About</a>
+                </li>
+                <li class="nav-mobile__item">
+                  <a href="#" class="nav-mobile__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link is-active">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Location</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="btn btn--header" href="#" target="_blank"
+              ><span class="btn__text">Booking now</span></a
+            >
+            <button type="button" class="menu__btn">
+              <svg class="menu__icon" id="open-btn">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+              <button type="button" class="menu__close" id="close-btn"></button>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Railtrips To Here, There And Everywhere!</h1>
+          <p class="hero__text">
+            We all wish to start our year the best way possible and also
+            according to a common belief if you have a great start to your.
+          </p>
+          <a class="btn btn--hero" href="#" target="_blank"
+            ><span class="btn__text">Explore more</span></a
+          >
+        </div>
+      </section>
+    </div>
+    <script src="./menu.js" type="module"></script>
+  </body>
 </html>
