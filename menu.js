@@ -1,6 +1,6 @@
 const openBtn = document.querySelector("#open-btn");
 const closeBtn = document.querySelector("#close-btn");
-const navigation = document.querySelector(".nav-mobile");
+const navigation = document.querySelector(".nav-mobile__list");
 closeBtn.style.opacity = "0";
 const openMenu = () => {
   navigation.classList.add("is-open");
