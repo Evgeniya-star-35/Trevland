@@ -39,16 +39,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
+
 .container{
   --container-width: 100%;
   width: var(--container-width);
@@ -60,11 +51,10 @@ img {
     position: relative;
 }
 .header--overlay{
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
   background-image: url('../images/hero/hero@1x.jpg');
-  background-size: contain;
+  background-size: 100% 82%;
   background-repeat: no-repeat;
 }
 
@@ -81,7 +71,6 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo{
     font-family: Ribeye;
 font-weight: 400;
@@ -98,10 +87,7 @@ color: var(--secondary-text-color);
     display: none;
     top: 0;
     left: 0;
-    
-  /* z-index: 15; */
 }
-
 .nav-mobile__list.is-open{
     display: block;
     position: absolute;
@@ -115,14 +101,17 @@ color: var(--secondary-text-color);
   background-color: var(--secondary-text-color);
   opacity: 0.9;
 }
-
 .nav-mobile__link{
         font-weight: 500;
         color: var(--primary-text-color);
         font-size: 25px;
+        transition: box-shadow var(--animation);
     }
+.nav-mobile__link:hover{
+        text-shadow: 3px 3px 10px red, -3px -3px 10px #ff0;
+}
 .btn{
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -139,6 +128,18 @@ color: var(--secondary-text-color);
     font-size: 9px;
 line-height: 150%;
 color: var(--secondary-text-color);
+}
+.hero{
+    padding-bottom: 50px;
+}
+.text--news{
+    width: 310px;
+    margin: 0 auto 12px
+}
+@media screen and (min-width:480px) {
+    .hero{
+        padding-bottom: 150px;
+    }
 }
 .hero__title{
     font-family: Gelasio;
@@ -160,8 +161,10 @@ color: var(--secondary-text-color);
 .btn--hero{
     width: 70px;
     height: 25px;
+    margin-bottom: 70px;
 }
 .menu__btn{
+    cursor: pointer;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -173,6 +176,7 @@ color: var(--secondary-text-color);
     fill: var(--secondary-text-color);
 }
 .menu__close{
+    cursor: pointer;
      position: absolute;
      top: 17px;
     right: 30px;
@@ -195,9 +199,60 @@ color: var(--secondary-text-color);
   background-repeat: no-repeat;
   z-index: 2;
 }
+.section-title{
+font-family: Gelasio;
+font-weight: 500;
+font-size: 16px;
+margin-bottom: 8px;
+line-height: 140%; 
+text-align: center;
+color: var(--primary-text-color);
+}
+.text{
+    font-size: 10px;
+line-height: 160%;
+text-align: center;
+color: var(--primary-text-color);
+opacity: 0.6;
+}
+.travel{
+    padding-bottom: 20px;
+}
+.text--travel{
+    max-width: 285px;
+    margin: 0 auto 12px;
+}
+.grid__item{
+    width: 300px;
+height: 365px;
+margin: 0 auto 20px;
+background: var(--secondary-text-color);
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+}
+.description__title{
+    font-family: Gelasio;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: var(--primary-text-color);
+}
+.description{
+    padding: 18px 65px;
+}
+.picture{
+    width: 100%;
+}
 @media (min-width:567px){
     .container{
         --container-width:var(--mg-size-sm);
+    }
+    .header--overlay{
+        width: 100wv;
+        height: 100hv;
+        background-size: 100% 82%;
     }
     .logo{
     font-size: 16px;
@@ -210,12 +265,18 @@ color: var(--secondary-text-color);
     .btn__text{
         font-size: 10px;
     }
+    .hero{
+    padding-bottom: 60px;
+}
     .hero__title{
         font-size: 20px;
         width: 250px;
     }
     .hero__text{
     font-size: 12px;
+}
+.btn--hero{
+    margin-bottom: 60px;
 }
 .menu__icon{
     width: 20px;
@@ -228,15 +289,38 @@ color: var(--secondary-text-color);
     width: 30px;
     height: 30px;
 }
+.section-title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
-
+.text{
+    font-size: 12px;
+}
+.text--travel{
+    max-width: 340px;
+    margin-bottom: 18px;
+}
+.text--news{
+    width: 380px;
+    margin-bottom: 18px;
+}
+.grid__item {
+    width: 320px;
+    height: 390px;
+}
+.description__title{
+    font-size: 16px;
+}
 }
 @media (min-width:768px){
     .container{
         --container-width:var(--mg-size-md);
     }
     .header--overlay{
-        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 84%;
     }
     .logo{
     font-size: 18px;
@@ -249,6 +333,9 @@ color: var(--secondary-text-color);
     .btn__text{
     font-size: 12px;
     }
+    .hero{
+    padding-bottom: 70px;
+}
     .hero__title{
         font-size: 28px;
         width: 350px;
@@ -261,6 +348,7 @@ color: var(--secondary-text-color);
 .btn--hero{
     width: 90px;
     height: 35px;
+    margin-bottom: 100px;
 }
 .menu__icon{
     width: 22px;
@@ -276,13 +364,53 @@ color: var(--secondary-text-color);
 .nav-mobile__link{
     font-size: 32px;
 }
+.section-title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.text{
+    font-size: 14px;
+}
+.travel{
+    padding-bottom: 0;
+}
+.text--travel{
+    max-width: 395px;
+    margin-bottom: 22px;
+}
+.description__title{
+    font-size: 18px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+.grid__item {
+    width: 350px;
+    height: 435px;
+    margin-right: 30px;
+}
+.grid__item:not(:last-child){
+    margin-bottom: 30px;
+
+}
+.description {
+    padding: 20px 65px;
+}
+.text--news {
+    width: 430px;
+    margin-bottom: 22px;
+}
 }
 @media (min-width:992px){
     .container{
         --container-width:var(--mg-size-lg);
     }
     .header--overlay{
-        background-size: cover;
+        background-size: 100% 84%;
     }
     .logo{
     font-size: 20px;
@@ -295,6 +423,9 @@ color: var(--secondary-text-color);
         font-size: 48px;
         width: 585px;
     }
+    .hero{
+    padding-bottom: 90px;
+}
     .hero__text{
     font-size: 16px;
     width: 450px;
@@ -303,6 +434,7 @@ color: var(--secondary-text-color);
 .btn--hero{
     width: 115px;
     height: 40px;
+    margin-bottom: 150px;
 }
 .menu__icon{
     width: 24px;
@@ -311,7 +443,34 @@ color: var(--secondary-text-color);
 .menu__close{
     right: 35px;
 }
-
+.section-title{
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+.text{
+    font-size: 16px;
+}
+.text--travel{
+    max-width: 495px;
+    margin-bottom: 35px;
+}
+.grid{
+    flex-wrap: nowrap;
+    padding-bottom: 60px;
+}
+.grid__item {
+    min-width: 300px;
+    height: 400px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+.description{
+    padding: 20px 30px;
+}
+.text--news {
+    width: 490px;
+    margin-bottom: 35px;
+}
 }
 @media (min-width:1200px){
     .container{
@@ -322,9 +481,9 @@ color: var(--secondary-text-color);
     padding-bottom: 208px;
 }
     .header--overlay{
-    height: 100vh;
-    width: 100vw;
-    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 86%;
     }
     .logo{
     font-size: 24px;
@@ -375,6 +534,12 @@ transition:  text-shadow var(--animation);
     .btn__text:hover{
         text-shadow: 3px 3px 10px red, -3px -3px 10px #ff0;
 }
+.hero{
+    padding-bottom: 140px;
+}
+.btn--hero{
+    margin-bottom: 244px;
+}
 .hero__title{
     font-size: 65px;
     width: 805px;
@@ -395,5 +560,49 @@ transition:  text-shadow var(--animation);
 .menu__close{
     display: none;
 }
-
+/* .grid{
+    display: grid;
+  grid-template-columns:  1fr 1fr 1fr ;
+  grid-auto-rows: 240px;
+  grid-gap: 12px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.grid{
+    padding-bottom: 0;
+}
+.grid__item{
+    width: 360px;
+height: 500px;
+margin-right: 37px;
+}
+.section-title{
+font-size: 43px;
+margin-bottom: 20px;
+}
+.text{
+    font-size: 18px;
+}
+.text--travel{
+    max-width: 735px;
+    margin-bottom: 50px;
+}
+.travel{
+    padding-bottom: 141px;
+}
+.description__title{
+font-size: 24px;
+}
+.picture{
+    width: 360px;
+    height: 331px;
+}
+.description{
+    padding: 35px 27px;
+}
+.text--news {
+    width: 581px;
+    margin-bottom: 56px;
+}
 }
