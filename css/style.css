@@ -72,6 +72,7 @@ img {
     align-items: center;
 }
 .logo{
+    pointer-events: none;
     font-family: Ribeye;
 font-weight: 400;
 font-size: 14px;
@@ -170,42 +171,7 @@ color: var(--secondary-text-color);
     height: 25px;
     margin-bottom: 70px;
 }
-/* .menu__btn{
-    cursor: pointer;
-    border: none;
-    cursor: pointer;
-    background: transparent;
-} */
-/* .menu__icon{
-    cursor: pointer;
-    width: 18px;
-    height: 18px;
-    fill: var(--secondary-text-color);
-} */
-/* .menu__close{
-    cursor: pointer;
-     position: absolute;
-     top: 17px;
-    right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color var(--animation);
-  outline: none;
-  background-image: url('../images/cross.svg');
-  background-position: center;
-  background-size: 45%;
-  background-repeat: no-repeat;
-  z-index: 2;
-} */
+
 .burger{
     display: flex;
     justify-content: center;
