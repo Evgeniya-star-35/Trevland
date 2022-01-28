@@ -226,7 +226,7 @@ opacity: 0.6;
     margin-bottom: 10px;
 }
 .travel{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .text--travel{
     max-width: 285px;
@@ -295,7 +295,12 @@ color: var(--primary-text-color);
 .photo-description__item{
     padding: 24px 10px;
 }
-
+.blog{
+    padding-bottom: 50px;
+}
+.logo--footer{
+    color: var(--primary-text-color);
+}
 @media (min-width:567px){
     .container{
         --container-width:var(--mg-size-sm);
@@ -394,6 +399,9 @@ font-size: 12px;
 }
 .photo-description__item {
     padding: 60px 10px 50px;
+}
+.blog{
+    padding-bottom: 80px;
 }
 }
 @media (min-width:768px){
@@ -514,6 +522,9 @@ font-size: 14px;
 .picture-blog {
     width: 290px;
 }
+.blog{
+    padding-bottom: 100px;
+}
 }
 @media (min-width:992px){
     .container{
@@ -565,7 +576,8 @@ font-size: 14px;
 }
 .grid{
     flex-wrap: nowrap;
-    padding-bottom: 60px;
+    margin: 0;
+padding-bottom: 60px;
 }
 .grid__item {
     min-width: 300px;
@@ -586,6 +598,8 @@ font-size: 14px;
 }
 .flex-grid{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .first{
     display: flex;
@@ -701,6 +715,11 @@ font-size: 16px;
     width: 805px;
     margin-right: auto;
     margin-bottom: 30px;
+    transition:  text-shadow var(--animation);
+}
+.hero__title:hover{
+        text-shadow: 3px 3px 10px red, -3px -3px 10px #ff0;
+
 }
 .hero__text{
     font-size: 18px;
@@ -751,7 +770,7 @@ margin-bottom: 20px;
 font-size: 24px;
 }
 .picture{
-    width: 360px;
+    width: 351px;
     height: 331px;
 }
 .description{
@@ -784,5 +803,8 @@ font-size: 20px;
 }
 .photo-description__item {
     padding: 35px 0 55px 20px;
+}
+.blog{
+    padding-bottom: 195px;
 }
 }
