@@ -114,6 +114,9 @@ color: var(--secondary-text-color);
 .nav-mobile__link:hover{
         text-shadow: 3px 3px 10px red, -3px -3px 10px #ff0;
 }
+.nav-mobile__item:not(:last-child){
+    margin-bottom: 10px;
+}
 .btn{
   display: flex;
   justify-content: center;
