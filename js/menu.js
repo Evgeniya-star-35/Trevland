@@ -16,10 +16,10 @@ const openMenu = () => {
 const clickMenu = (e) => {
   if ((menu.style.display = "none")) {
     menu.style.display = "";
-    burgerBtn.addEventListener("click", openMenu);
-    burgerBtn.addEventListener("click", closeMenu);
-    burgerBtn.removeEventListener("click", openMenu);
-    burgerBtn.removeEventListener("click", closeMenu);
+    e.currentTarget.addEventListener("click", openMenu);
+    e.currentTarget.addEventListener("click", closeMenu);
+    e.currentTarget.removeEventListener("click", openMenu);
+    e.currentTarget.removeEventListener("click", closeMenu);
     e.currentTarget.addEventListener("click", toggleMenu);
   }
 };
