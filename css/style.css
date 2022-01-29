@@ -421,6 +421,37 @@ line-height: 150%;
 letter-spacing: 0.06em;
 color: var(--primary-text-color);
 }
+.top-wrapper{
+position: fixed;
+  bottom: 39px;
+  right: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.top-wrapper img {
+  position: fixed;
+  right: 30px;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--animation);
+  scroll-behavior: smooth;
+}
+  
+  .top-wrapper img {
+    background: rgba(169, 212, 218, 0.288);
+    box-shadow: 0 0px 10px rgb(15, 15, 15), 0 16px 20px rgb(62, 198, 211);
+  }
+  
+  .top{
+      width: 25px;
+  height: 25px;
+  scroll-behavior: smooth;
+  }
+  .top:hover{
+      background-color: var(--btn-and-accent-color);
+  }
 
 @media (min-width:567px){
     .container{
