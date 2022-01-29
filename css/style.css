@@ -377,7 +377,7 @@ line-height: 150%;
 letter-spacing: 0.06em;
 color: var(--primary-text-color);
 }
-.form__flex{
+.form__field{
     display: inline-flex;
     align-items: center;
 }
