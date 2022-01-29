@@ -1,5 +1,5 @@
 const [buttonUp] = document.getElementsByClassName("js-top");
-console.log(buttonUp);
+const [form] = document.getElementsByClassName("form__field");
 
 window.addEventListener("scroll", hideElOnScroll(buttonUp));
 buttonUp.addEventListener("click", toPageTopOnClick);
@@ -17,3 +17,8 @@ function hideElOnScroll(el) {
 function toPageTopOnClick(e) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+const onSubmit = (e) => {
+  e.preventDefault();
+  e.currentTarget.reset();
+};
+form.addEventListener("submit", onSubmit);
