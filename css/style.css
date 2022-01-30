@@ -184,17 +184,18 @@ color: var(--secondary-text-color);
     width: 15px;
     cursor: pointer;
     position: relative;
+    transition: all var(--animation);
     z-index: 2;
 }
 .burger.is-open .burger__item{
     opacity: 0;
-    transition: 0.5;
+    transition: all var(--animation);
 }
 .burger.is-open::before{
     top: 0;
     background-color: var(--btn-and-accent-color);
     transform: rotate(45deg);
-    transition: 0.5;
+    transition: all var(--animation);
     z-index: 2;
 }
 .burger.is-open::after{
@@ -205,9 +206,11 @@ color: var(--secondary-text-color);
 }
 .burger::before{
 top: 0;
+transition: all var(--animation);
 }
 .burger::after{
     bottom: 0;
+    transition: all var(--animation);
 }
 .burger__item{
     background-color: var(--secondary-text-color);
