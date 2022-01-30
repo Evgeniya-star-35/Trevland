@@ -304,15 +304,15 @@ margin-bottom: 8px;
 .description__title--blog{
     margin-bottom: 10px;
 }
-.descr__link{
+.descriptions__link{
 font-size: 10px;
 line-height: 150%;
 color: var(--primary-text-color);
 }
-.descr__link--blog{
+.descriptions__link--blog{
     font-weight: 500;
 }
-.picture-news{
+.first__picture{
     width: 330px;
     margin: 0 auto 15px;
     border-radius: 10px;
@@ -538,13 +538,13 @@ font-size: 14px;
     width: 365px;
     text-align: center;
 }
-.descr__link{
+.descriptions__link{
 font-size: 12px;
 }
 .blog{
     padding: 60px 0;
 }
-.picture-news{
+.first__picture{
     width: 350px;
     margin: 0 auto 20px;
 }
@@ -709,10 +709,10 @@ margin-bottom: 10px;
 .text--blog{
     width: 400px;
 }
-.descr__link{
+.descriptions__link{
 font-size: 14px;
 }
-.picture-news{
+.first__picture{
     width: 400px;
     margin: 0 auto 30px;
 }
@@ -860,10 +860,10 @@ padding-bottom: 60px;
 font-size: 18px;
 }
 
-.descr__link{
+.descriptions__link{
 font-size: 16px;
 }
-.picture-news{
+.first__picture{
     width: 376px;
 }
 .photos__picture{
@@ -1006,7 +1006,7 @@ cursor: pointer;
 transition: transform var(--animation), filter var(--animation);
 }
 .grid__item:hover,
-.picture-news:hover,
+.first__picture:hover,
 .photos__picture:hover{
     transform: scale(1.01);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1066,14 +1066,14 @@ font-size: 20px;
 .description__title--blog{
     text-align: left;
 }
-.descr__link{
+.descriptions__link{
 font-size: 20px;
 transition:  text-shadow var(--animation);
 }
-.descr__link:hover{
+.descriptions__link:hover{
     text-shadow: 3px 3px 10px red, -3px -3px 10px #ff0;
 }
-.picture-news{
+.first__picture{
     width: 554px;
     margin-bottom: 38px;
     cursor: pointer;
